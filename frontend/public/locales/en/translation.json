@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "courses": "Courses",
+    "store": "Store",
+    "portal": "Student Portal",
+    "contact": "Contact",
+    "gallery": "Gallery",
+    "cart": "Cart",
+    "wishlist": "Wishlist",
+    "admin": "Admin Panel"
+  },
+  "home": {
+    "hero_title": "Empowering Minds, Shaping Futures",
+    "hero_subtitle": "MSME & GST Registered Computer Training Institute. Shop Stationery, Electronics, and Computer Accessories.",
+    "explore_courses": "Explore Courses",
+    "shop_now": "Shop Store",
+    "courses_title": "Featured Courses",
+    "products_title": "New Arrivals"
+  },
+  "courses": {
+    "duration": "Duration",
+    "months": "Months",
+    "register": "Register Online",
+    "syllabus": "Syllabus"
+  },
+  "pos": {
+    "title": "POS Billing Register",
+    "scan_placeholder": "Scan product barcode...",
+    "checkout": "Checkout",
+    "total": "Total",
+    "cashier": "Cashier"
+  }
+}

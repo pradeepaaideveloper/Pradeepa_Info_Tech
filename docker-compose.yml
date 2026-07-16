@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: pradeepa_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: pradeepadb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: pradeepa_backend
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=mysql+pymysql://root:password@db:3306/pradeepadb
+      - SECRET_KEY=SUPER_SECRET_JWT_KEY_FOR_PRADEEPA_INFO_TECH_12345!
+      - APP_NAME=Pradeepa Info Tech API
+      - DEBUG=True
+    depends_on:
+      - db
+
+volumes:
+  mysql_data:

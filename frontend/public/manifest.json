@@ -1,0 +1,17 @@
+{
+  "short_name": "Pradeepa",
+  "name": "Pradeepa Info Tech - Computer Academy & E-Store",
+  "description": "Comprehensive IT training academy and computer accessories/stationery e-commerce store.",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0f172a",
+  "theme_color": "#0284c7",
+  "display": "standalone",
+  "orientation": "portrait"
+}
